@@ -1,1 +1,32 @@
-
+<nav class="navbar-source">
+  <div class="logo">
+    <%= image_tag ('logo.png'), height: 40 %>
+  </div>
+  <ul class="nav-links">
+    <li class="nav-item active">
+      <%= link_to root_path do %>
+          <i class="fas fa-home"></i><br>  <%= t(".home", default: "Home") %>
+        <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to about_path do %>
+          <i class="far fa-user"></i><br>  <%= t(".about", default: "About") %>
+        <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to projects_path do %>
+          <i class="far fa-file"></i><br>  <%= t(".projects", default: "Projects") %>
+        <% end %>
+    </li>
+    <li class="nav-item">
+      <%= link_to contact_path do %>
+          <i class="far fa-envelope"></i><br>  <%= t(".contact", default: "Contact") %>
+        <% end %>
+    </li>
+  </ul>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>

@@ -1,0 +1,85 @@
+.contact {
+  background-image: image-url('map-image.png');
+  object-fit: cover;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 60%;
+  text-align: center;
+  border: 1px solid #555657;
+  background-color: black;
+  padding: 50px 50px;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-wrapper > h1 {
+  color: #f4f4f4;
+  font-size: 32px;
+}
+
+label {
+  margin-bottom: 0px !important;
+  color: $flash-blue;
+  font-size: 13px;
+  text-align: left;
+}
+
+input, textarea {
+  background-color: black;
+  border: 1px solid #555657;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 20px;
+  color: #f4f4f4;
+  outline-color: $flash-blue !important;
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 96px;
+}
+
+.btn-submit {
+  color: $flash-blue;
+  padding: 10px 25px;
+  margin: 25px 0px;
+  border: 2px solid $flash-blue;
+  border-radius: 50px;
+  width: 150px;
+}
+
+.btn-submit:hover {
+  color: black;
+  background-color: $flash-blue;
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrapper {
+    width: 90%;
+  }
+
+}

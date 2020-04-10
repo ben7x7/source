@@ -1,6 +1,6 @@
 .contact {
   background-image: image-url('map-image.png');
-  object-fit: cover;
+  background-size: cover;
   height: 90vh;
   width: 100%;
   display: flex;
@@ -9,12 +9,16 @@
   align-items: center;
 }
 
+.contact > img {
+  height: 90vh;
+}
+
 .form-wrapper {
   width: 60%;
   text-align: center;
   border: 1px solid #555657;
   background-color: black;
-  padding: 50px 50px;
+  padding: 30px 30px;
   border-radius: 5px;
 }
 

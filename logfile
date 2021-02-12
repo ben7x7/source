@@ -1,0 +1,11 @@
+2020-12-02 18:15:13.078 CET [95297] LOG:  listening on IPv6 address "::1", port 5432
+2020-12-02 18:15:13.078 CET [95297] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2020-12-02 18:15:13.079 CET [95297] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2020-12-02 18:15:13.088 CET [95298] LOG:  database system was shut down at 2020-12-02 18:15:02 CET
+2020-12-02 18:15:13.092 CET [95297] LOG:  database system is ready to accept connections
+2020-12-02 18:16:09.348 CET [95360] FATAL:  database "source_development" does not exist
+2020-12-18 07:10:08.771 CET [80255] FATAL:  database "table_des_artisans_development" does not exist
+2020-12-19 14:33:36.979 CET [95297] LOG:  received smart shutdown request
+2020-12-19 14:33:36.983 CET [95297] LOG:  background worker "logical replication launcher" (PID 95304) exited with exit code 1
+2020-12-19 14:33:36.983 CET [95299] LOG:  shutting down
+2020-12-19 14:33:36.993 CET [95297] LOG:  database system is shut down

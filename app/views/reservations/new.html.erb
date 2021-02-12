@@ -1,0 +1,27 @@
+<div class="container-reservations">
+  <div class="wrapper">
+    <h1 class="text-center">Booking Form</h1>
+  </div>
+  <div class="reservation-form">
+    <%= form_for @reservation do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name, placeholder: "Nom", required: true %>
+      <%= f.label :pax %>
+      <%= f.number_field :pax, value:"1", min:"1", required: true %>
+      <%= f.label :date %>
+      <%= f.date_field :date, format: "%a %e %b %Y", required: true %>
+      <% if @reservation.errors[:date].any? %>
+        <div id="error_explanation">
+          <% @reservation.errors.full_messages.each do |msg| %>
+            <%= msg %>
+          <% end %>
+        </div>
+      <% end %>
+      <%= f.label :time %>
+      <%= f.time_field :time, required: true %>
+      <br>
+
+      <%= f.submit 'Réserve une table', class: "button-reservation" %>
+    <% end %>
+  </div>
+</div>

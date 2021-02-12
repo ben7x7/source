@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about', as: :about
   get 'projects', to: 'pages#projects', as: :projects
   get 'contact', to: 'pages#contact', as: :contact
+
+  resources :reservations, only: [ :new, :create ]
 end

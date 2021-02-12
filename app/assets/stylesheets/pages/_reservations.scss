@@ -1,0 +1,27 @@
+.container-reservations {
+  background-color: #f4f4f4;
+  color: #393939;
+  padding: 60px 0 80px 0;
+}
+
+.reservation-form {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.button-reservation {
+  background-color: red;
+}
+
+.form-group {
+  margin-bottom: 0 !important;
+}
+
+#date-error,
+#time-error {
+  margin-bottom: 0 !important;
+}

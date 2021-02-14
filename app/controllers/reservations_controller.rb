@@ -9,7 +9,7 @@ class ReservationsController < ApplicationController
     if @reservation.save
       flash.now[:notice] = 'Booked !'
     else
-      flash.now[:alert] = 'Can\'t send message'
+      flash.now[:alert] = 'Can\'t send your reservation'
       render :new
     end
   end

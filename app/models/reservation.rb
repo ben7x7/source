@@ -16,22 +16,18 @@ class Reservation < ApplicationRecord
   end
 
   def check_time_valid?
-    if lunch_time == false && diner_time == false
-      errors.add(:time, 'Lunch: 12h-14h  Diner: 19h-22h')
+    start_lunch = '12:00'
+    end_lunch = '14:00'
+    start_diner = '19:00'
+    end_diner = '22:00'
+
+    if time.strftime('%H:%M') < start_lunch
+      errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
+    elsif time.strftime('%H:%M') > end_lunch && time.strftime('%H:%M') < start_diner
+      errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
+    elsif time.strftime('%H:%M') > end_diner
+      errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
     end
   end
-
-  def lunch_time
-    t1 = Time.new('12:00')
-    t2 = Time.new('14:00')
-    time.between?(t1, t2)
-  end
-
-  def diner_time
-    t1 = Time.new('19:00')
-    t2 = Time.new('22:00')
-    time.between?(t1, t2)
-  end
-
 end
 

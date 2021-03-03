@@ -7,7 +7,8 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
     if @reservation.save
-      flash.now[:notice] = 'Booked !'
+      mail = ReservationMailer.with(reservation: @reservation).welcome
+      mail.delivery_now
     else
       flash.now[:alert] = 'Can\'t send your reservation'
       render :new

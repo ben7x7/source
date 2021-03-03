@@ -7,6 +7,10 @@
       <%= link_to 'RESERVATION', new_reservation_path  %>
     </li>
     <li class="nav-item">
+      <%= link_to '404', 404_path  %>
+    </li>
+
+    <li class="nav-item">
       <%= link_to about_path do %>
           <i class="far fa-user"></i><br>  <%= t(".about", default: "About") %>
         <% end %>

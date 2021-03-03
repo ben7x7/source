@@ -15,6 +15,8 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'letter_opener', group: :development
+gem 'postmark-rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

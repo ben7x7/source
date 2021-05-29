@@ -21,11 +21,11 @@ class Reservation < ApplicationRecord
     start_diner = '19:00'
     end_diner = '22:00'
 
-    if time.strftime('%H:%M') < start_lunch
+    if time < start_lunch
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
-    elsif time.strftime('%H:%M') > end_lunch && time.strftime('%H:%M') < start_diner
+    elsif time > end_lunch && time < start_diner
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
-    elsif time.strftime('%H:%M') > end_diner
+    elsif time > end_diner
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
     end
   end

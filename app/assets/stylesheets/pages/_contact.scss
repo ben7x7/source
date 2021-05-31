@@ -1,33 +1,25 @@
-.contact {
+.section-contact {
   background-image: image-url('map-image.png');
   background-size: cover;
-  height: 90vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 
-.contact > img {
-  height: 90vh;
-}
-
-.form-wrapper {
-  width: 60%;
+.contact-form-wrapper {
   text-align: center;
-  border: 1px solid #555657;
-  background-color: black;
-  padding: 30px 30px;
-  border-radius: 5px;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 1rem 1rem;
+  color: $light-gray;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+h1.form-title {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+p.subtitle {
+  font-style: italic;
+  font-size: 24px;
 }
 
 .input-form {
@@ -37,26 +29,22 @@
   margin-bottom: 15px;
 }
 
-.form-wrapper > h1 {
-  color: #f4f4f4;
-  font-size: 32px;
-}
-
 label {
   margin-bottom: 0px !important;
-  color: $red;
+  color: $flash-blue;
   font-size: 13px;
   text-align: left;
 }
 
 input, textarea {
-  background-color: black;
+  background-color: $dark-gray;
+  opacity: 0.8;
   border: 1px solid #555657;
   border-radius: 5px;
   width: 100%;
   padding: 10px 20px;
   color: #f4f4f4;
-  outline-color: $red !important;
+  outline-color: $flash-blue !important;
 }
 
 input {
@@ -79,6 +67,10 @@ textarea {
 .btn-submit:hover {
   color: black;
   background-color: $flash-blue;
+}
+
+button.btn.btn-submit {
+  font-weight: bold !important;
 }
 
 @media screen and (max-width: 768px) {

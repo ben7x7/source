@@ -1,0 +1,26 @@
+.section-404 {
+  background-color: #393939;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+.error-devil {
+  background-image: image-url('devil-404.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80%;
+}
+
+
+.btn-error {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-error:hover {
+
+}

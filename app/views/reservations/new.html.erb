@@ -5,19 +5,19 @@
   <div class="reservation-form">
     <%= form_for @reservation do |f| %>
 
-      <%= f.label :name %>
+      <%= f.label :name, class: "label-form"%>
       <%= f.text_field :name, placeholder: "Nom", required: true %>
        <p class="error"><%= show_errors(@reservation, :name) %></p>
 
-      <%= f.label :pax %>
+      <%= f.label :pax, class: "label-form" %>
       <%= f.number_field :pax, value:"1", min:"1", required: true %>
       <p class="error"><%= show_errors(@reservation, :pax) %></p>
 
-      <%= f.label :date %>
+      <%= f.label :date, class: "label-form" %>
       <%= f.date_field :date, format: "%a %e %b %Y", required: true %>
       <p class="error"><%= show_errors(@reservation, :date) %></p>
 
-      <%= f.label :time %>
+      <%= f.label :time, class: "label-form" %>
       <%= f.time_field :time, required: true %>
       <p class="error"><%= show_errors(@reservation, :time) %></p>
 

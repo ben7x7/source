@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects', as: :projects
   get 'contact', to: 'pages#contact', as: :contact
   get 'p404', to: 'pages#p404', as: :p404
+  get 'starwars', to: 'pages#starwars', as: :starwars
+  get 'matrix', to: 'pages#matrix', as: :matrix
 
   resources :reservations, only: [ :new, :create ]
 end

@@ -1,0 +1,29 @@
+.matrix-section {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+canvas {
+  display: block;
+  background-color: black;
+}
+
+.matrix-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.matrix-text img {
+  height: 300px;
+}
+
+.matrix-text h1 {
+  text-align: center;
+  color: #FDE0A2;
+  padding-top: 30px;
+  font-size: 42px;
+  font-weight: bold;
+}

@@ -19,3 +19,6 @@ import 'bootstrap';
 
 import {navSlide} from '../components/navbar.js';
 navSlide();
+
+import {matrix} from '../components/matrix.js';
+matrix();

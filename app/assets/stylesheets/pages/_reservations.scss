@@ -1,31 +1,62 @@
-.container-reservations {
-  background-color: #f4f4f4;
-  color: #393939;
-  padding: 60px 0 80px 0;
+.container-reservation {
+  height: 100vh;
+  background-color: #ECF0F3;
+  padding: 100px 0;
 }
 
-.reservation-form {
-  max-width: 400px;
-  margin: 50px auto;
+.form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  border-radius: 14px;
+  box-shadow: 13px 13px 20px #CBCED1,
+              -13px -13px 20px #FFFFFF;
 }
 
 .form-group {
   width: 100%;
+  margin-bottom: 0 !important;
+}
+
+.form-reservation input {
+  background: none;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: inset 5px 5px 9px #CBCED1,
+              inset -5px -5px 9px #FFFFFF;
 }
 
 label.label-form {
   color: black !important;
-  font-weight: bold !important;
 }
 
-.button-reservation {
-  background-color: red;
+input.button-reservation {
+  background-color: #24CFAA;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow:  0px 0px 1px #393939,
+                1px 1px 3px #000000;
   margin-top: 20px;
+  padding: 0px;
+  border: 0;
+  outline: none;
+  box-shadow: 3px 3px 8px #B1B1B1,
+              -3px -3px 8px #FFFFFF;
+
 }
 
-.form-group {
-  margin-bottom: 0 !important;
+input.button-reservation:hover {
+  background-color: #2FDBB6;
 }
+
+input.button-reservation:active {
+  background-color: #1DA88A;
+}
+
 p.error {
   color: red;
   margin-bottom: 0px

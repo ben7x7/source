@@ -1,0 +1,22 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+  background-color: #000;
+  // -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000006);
+}

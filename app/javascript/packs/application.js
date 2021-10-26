@@ -18,7 +18,14 @@ require("channels")
 import 'bootstrap';
 
 import {navSlide} from '../components/navbar.js';
-navSlide();
 
 import {matrix} from '../components/matrix.js';
-matrix();
+
+
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your functions here, e.g:
+  navSlide();
+  matrix();
+
+});

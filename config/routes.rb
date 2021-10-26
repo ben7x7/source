@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'p404', to: 'pages#p404', as: :p404
   get 'starwars', to: 'pages#starwars', as: :starwars
   get 'matrix', to: 'pages#matrix', as: :matrix
+  get 'carousel', to: 'pages#carousel', as: :carousel
 
   resources :reservations, only: [ :new, :create ]
 end

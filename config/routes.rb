@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'starwars', to: 'pages#starwars', as: :starwars
   get 'matrix', to: 'pages#matrix', as: :matrix
   get 'carousel', to: 'pages#carousel', as: :carousel
+  get 'cards', to: 'pages#cards', as: :cards
 
   resources :reservations, only: [ :new, :create ]
 end

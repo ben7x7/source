@@ -1,12 +1,49 @@
 <section class="home">
-  <div class="home-wrapper">
-    <h1>
-      Hello, <br>
-      My name is Benoit, <br>
-    </h1>
-    <%= render 'pages/dev' %>
-  </div>
-  <div class="home-picture">
-    <%= image_tag ('code.jpg') %>
+  <div class="home-boxes">
+    <div class="home-link">
+      <%= link_to 'WELCOME PAGES', accueil_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'ABOUT', about_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'NAVBARS', nav_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'FOOTERS', footer_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'FORMS', new_reservation_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'CAROUSEL', carousel_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'CARDS', cards_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'ANIMATION', root_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'TEXT', root_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'SHADOWS', root_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'ICONES', root_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'RESOURCES', root_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'PROJECTS', projects_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'PAGES 404', p404_path %>
+    </div>
+    <div class="home-link">
+      <%= link_to 'CONTACT', contact_path %>
+    </div>
   </div>
 </section>

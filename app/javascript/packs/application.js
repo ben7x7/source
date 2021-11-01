@@ -17,13 +17,13 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 
-import {navSlide} from '../components/navbar.js';
+//import {navSlide} from '../components/navbar.js';
 import {matrix} from '../components/matrix.js';
 import {cardsAnimation} from '../components/cards.js';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  navSlide();
+  //navSlide();
   matrix();
   cardsAnimation();
 });

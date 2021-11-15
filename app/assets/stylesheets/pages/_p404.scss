@@ -1,16 +1,16 @@
 .section-404 {
   background-color: #393939;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
+
 .error-devil {
   background-image: image-url('devil-404.png');
   background-repeat: no-repeat;
   background-position: center;
   height: 80%;
 }
-
 
 .btn-error {
   position: absolute;
@@ -23,4 +23,36 @@
 
 .btn-error:hover {
 
+}
+
+.error-404 {
+  height: 100vh;
+  width: 100%;
+  background-image: image-url('404-background.jpg');
+  background-size: cover;
+
+  position: relative;
+}
+
+.error-404 .content-404 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.error-404 .content-404 h1 {
+  color: white;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error-404 .content-404 p {
+  color: $red;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
 }

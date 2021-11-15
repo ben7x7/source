@@ -16,6 +16,18 @@
   padding: 100px 80px 0px 80px;
 }
 
+.logo-ben {
+  width: 250px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.logo-ben h2 {
+  font-family: 'Titan One', cursive;
+  font-size: 24px;
+  color: white;
+}
+
 #developper {
   animation: fill 2s ease forwards 1.2s;
 }
@@ -129,4 +141,84 @@
     height: 40vh;
     width: 100%;
   }
+}
+
+.homepage {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4) 20%), image-url('front-page.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .home-content {
+  text-align: center;
+}
+
+.homepage h1 {
+  color: white;
+  font-family: 'Titan One', cursive;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homepage p {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.homepage .btn-reserve {
+  border: solid 3px $orange;
+  border-radius: 8px;
+  padding: 20px 30px;
+  background-color: $orange;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px -1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.homepage .btn-reserve a {
+  text-decoration: none;
+}
+
+.homepage .btn-reserve:hover {
+  text-decoration: none;
+  color: $orange;
+  background: transparent;
+}
+
+.frontpage {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4) 20%), image-url('ice.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontpage h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  color: $white;
+  max-width: 600px;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.frontpage p {
+  font-size: 18px;
+  font-style: italic;
+  color: $light-gray;
+  text-align: center;
+  max-width: 600px;
 }

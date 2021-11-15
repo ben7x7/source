@@ -5,8 +5,24 @@
       My name is Benoit, <br>
     </h1>
     <%= render 'pages/dev' %>
+    <div class="logo-ben text-center">
+      <h2>BENOÌT</h2>
+    </div>
   </div>
   <div class="accueil-picture">
     <%= image_tag ('code.jpg') %>
   </div>
+</section>
+
+<section class="homepage">
+  <div class="home-content">
+    <h1>La Table des Artisans</h1>
+    <p>RESTAURANT THAILANDAIS</p>
+    <%= link_to 'RESERVER', new_reservation_path, class: 'btn-reserve' %>
+  </div>
+</section>
+
+<section class="frontpage">
+  <h1>Lorem ipsum dolor!</h1>
+  <p>Deserunt et cupiditate eligendi deleniti dicta sapiente quis exercitationem delectus error assumenda sequi, laborum earum harum vero.</p>
 </section>

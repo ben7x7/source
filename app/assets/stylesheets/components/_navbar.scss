@@ -1,100 +1,62 @@
-.navbar-source {
+.my-navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  background-color: $dark-gray;
+  height: 72px;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 0 30px;
+  z-index: 1000;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  margin-bottom: 0px;
+
+#nav-logo {
+  padding:0 10px 0 10px;
+  height: 30px;
 }
 
-.nav-links li {
-  list-style: none;
-  text-align: center;
+#brand {
+  font-family: 'Titan One', cursive;
+  font-size: 24px;
+  color: $orange;
 }
 
-.nav-links a {
+.my-navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  letter-spacing: 2px;
   color: $light-gray;
-  text-decoration: none;
-  letter-spacing: 1px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+a.nav-link {
+  margin-right: 40px;
+}
+
+a.nav-link:hover {
+  color: $orange;
   font-weight: bold;
-  font-size: 14px;
+  border-bottom: solid 3px $orange;
 }
 
-.nav-links a:hover {
-  color: $flash-blue;
+button.navbar-toggler {
+  color: #F1E4D3 !important;
 }
 
-.burger {
-  display: none;
-  cursor: pointer;
+.transition {
+  height: 100px;
+  width: 100%;
+  padding: 40px 40px;
+  background-color: $cream;
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: $light-gray;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1024px){
-  body {
-    overflow-x: hidden;
-  }
-
-  .nav-links {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: $dark-gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px,-6px);
+.transition hr {
+  color: white;
+  border: solid 3px red;
 }

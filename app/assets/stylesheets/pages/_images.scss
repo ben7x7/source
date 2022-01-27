@@ -1,1 +1,27 @@
+.image-container {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  position: relative;
+}
+
+.text-zone {
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80');
+  background-size: cover;
+  margin-bottom: 0 !important;
+}
+
+.text-zone h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 25vw;
+  color: rgba(255,255,255,0.9);
+  background: #000;
+  mix-blend-mode: multiply;
+  margin-bottom: 0 !important;
+}
 

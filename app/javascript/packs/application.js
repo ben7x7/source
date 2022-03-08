@@ -19,11 +19,14 @@ import 'bootstrap';
 
 //import {navSlide} from '../components/navbar.js';
 import {matrix} from '../components/matrix.js';
-import {cardsAnimation} from '../components/cards.js';
+import {animationText} from '../components/animation_text.js';
+import {animationCard} from '../components/animation_card.js';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   //navSlide();
+  animationCard();
+  animationText();
   matrix();
-  cardsAnimation();
+
 });

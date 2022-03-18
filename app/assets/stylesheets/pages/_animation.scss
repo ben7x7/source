@@ -1,3 +1,57 @@
+// *********** ANIMATION TEXT ***********
+.animation-text {
+  background-color: #191919;
+  color: #FFFFFF;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  perspective: 500px;
+}
+
+$width: 17px;
+
+.animation-text-container {
+  display: flex;
+}
+
+.panel {
+  position: relative;
+  width: $width;
+  height: 100px;
+//  border: solid 1px white;
+  overflow: hidden;
+  animation: text 3s var(--delay) forwards ease-in-out;
+}
+
+.panel::before {
+  position: absolute;
+  content: 'NOUVEAU';
+  font-size: 85px;
+  width: max-content;
+  left: var(--left);
+  color: hsl(var(--hue), 75%, 75%);
+}
+
+@for $i from 0 to 24 {
+  .panel:nth-child(#{$i + 1}) {
+    --left: #{$width * $i * -1};
+    --hue: #{360/24*$i};
+    --delay: #{$i * 0.1s};
+  }
+}
+
+@keyframes text {
+  0%, 15% {
+    transform: rotateX(0deg);
+  }
+  85%, 100% {
+    transform: rotateX(720deg);
+  }
+}
+
+
+
+// ********* ANIMATION CARDS **********
 .animation,
 .animation-css {
   width: 100%;
@@ -76,3 +130,4 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
